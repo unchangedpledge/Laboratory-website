@@ -1,0 +1,18 @@
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+tr {
+  text-align: center;
+}
+td,
+th,
+td{
+  padding: 5px 10px;
+  border: 1px solid #000;
+  text-align: center;
+}
+.num {
+  width: 100px;
+}

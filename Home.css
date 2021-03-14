@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #424242;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+body {
+    min-width: 935px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.home-header {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url(image/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.home-header .nav {
+    max-width: 999px;
+    position: relative;
+    margin: 40px auto;
+}
+
+.home-header .nav .nav-content ul {
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+}
+
+.home-header .nav .nav-content ul li {
+    margin-right: 30px;
+}
+
+.home-header .nav .nav-content .dec {
+    position: relative;
+    transition: all .3s;
+}
+
+.home-header .nav .nav-content .dec.currentOn {
+    color: #00a1d6;
+}
+
+.home-header .nav .nav-content .dec.currentOn::after {
+    left: 0;
+    right: 0;
+}
+
+.home-header .nav .nav-content .dec::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 2px;
+    background-color: #00a1d6;
+    transition-property: left, right;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.home-header .nav .nav-content .dec:hover {
+    color: #00a1d6;
+}
+
+.home-header .nav .nav-content .dec:hover::after {
+    left: 0;
+    right: 0;
+}
+
+.nav .logo {
+    position: absolute;
+    left: -140px;
+    height: 75px;
+    width: 75px;
+}
+
+.home-header .nav .logo img {
+    display: block;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    margin-top: -20px;
+}
+
+.menu-wrap {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+    padding: 5px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.menu-wrap.on {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-wrap .menu-content {
+    display: flex;
+    flex-flow: column;
+}
+
+.menu-wrap .menu-content a {
+    width: 100%;
+    height: 40px;
+    letter-spacing: 0.5px;
+    padding: 10px 4px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f9f9f9;
+    transition: all .3s;
+}
+
+.menu-wrap .menu-content a:last-child {
+    border-bottom: none;
+}
+
+.menu-wrap .menu-content a:hover {
+    background-color: rgba(71, 120, 238, 0.1);
+}
+
+.menu-wrap .arrow {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.join-us {
+    position: relative;
+    top: -8px;
+    left: 10px;
+}
+
+.join-us a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(96, 58, 237);
+    border-radius: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-introduction .introduction-content {
+    position: relative;
+    max-width: 999px;
+    margin: 0 auto;
+    background-color: #f8fafd;
+    box-shadow: 0 2px 28px 0 rgba(16, 33, 49, 0.14);
+    padding-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+.home-introduction .introduction-content .img {
+    user-select: none;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.home-introduction .introduction-content .img img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.home-introduction .introduction-content .content-top {
+    height: 150px;
+}
+
+.home-introduction .introduction-content .content-top .top-wrapper {
+    padding-top: 20px;
+    max-width: 550px;
+}
+
+.home-introduction .introduction-content .title {
+    height: 40px;
+    background: -webkit-linear-gradient(left, #0775FE, #eee);
+    margin-bottom: 10px;
+}
+
+.home-introduction .introduction-content .title .titleName {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.home-introduction .introduction-content .content-top p.web {
+    text-indent: 2em;
+    color: #969699;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.home-introduction .introduction-content .content-top p a {
+    text-indent: 0;
+    position: absolute;
+    left: 570px;
+    top: 0;
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 8px;
+    background-color: #4778ee;
+    transition: background-color .3s;
+}
+
+.content-cards {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.content-cards li {
+    width: 25%;
+    display: inline-block;
+}
+
+.content-cards li .card-item {
+    display: block;
+    border: 1px solid rgba(224, 224, 224, 0.32);
+    border-radius: 2px;
+    background-color: #fff;
+    margin: 0 8px 0;
+    padding: 20px 30px 15px;
+}
+
+.content-cards li .card-item:hover {
+    transition: transform .5s;
+    transform: translateY(-5px) scale(1, 1);
+    box-shadow: 0 0 10px rgba(218, 213, 213, 0.603);
+}
+
+.content-cards li .card-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.content-cards li .card-item .item-title {
+    font-weight: 500;
+    color: #26262c;
+    margin: 10px 0 6px 0;
+}
+
+.content-cards li .card-item p {
+    font-size: 12px;
+    color: #999;
+}
+
+.life .ggc {
+    user-select: none;
+    width: 700px;
+    height: 440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.life .ggc .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 600%;
+}
+
+.life .ggc .slider .item {
+    width: 700px;
+    height: 440px;
+    float: left;
+}
+
+.life .trigger {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin-left: -30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.life .trigger span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 3px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.life .trigger span:hover {
+    background-color: #f40;
+    border-color: #eee;
+}
+
+.life .trigger span.current {
+    background-color: #f40;
+    border-color: #eee;
+}
+
+.footer {
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+    border-top: 1px solid #eee;
+}
+
+.footer .footer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -130px;
+}
+
+.footer .footer-text p {
+    color: #999;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: 300;
+}

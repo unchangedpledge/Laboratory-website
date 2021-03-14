@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join us!</title>
+  <link rel="shortcut icon" href="../../image/favicon.ico" />
+  <link rel="stylesheet" href="message.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="warp">
+      <div class="layout">
+        <!-- logo部分 -->
+        <div class="logo_area">
+          <h4>前端及WEB应用开发实验室</h4>
+          <img src="../../image/logo.png" alt="WEB_logo" style="user-select:none">
+        </div>
+        <div class="regbox">
+          <!-- 姓名和学号部分 -->
+          <div class="step1">
+            <div class="stuName">
+              <h4>姓名</h4>
+              <input type="text" placeholder="请输入姓名" class="el-input myName" maxlength="4">
+              <p></p>
+            </div>
+            <div class="stuID">
+              <h4>学号</h4>
+              <input type="text" placeholder="请输入学号" class="el-input stuID-input" maxlength="11">
+              <p></p>
+              <div class="tip_text"><svg t="1612703581356" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  p-id="2930">
+                  <path
+                    d="M523.264 284.992l-22.016 0c-13.568 0-24.64 11.072-24.64 24.704l0 273.344c0 13.632 11.008 24.832 24.64 24.832l22.016 0c13.696 0 24.768-11.2 24.768-24.832l0-273.344C548.032 296.064 536.96 284.992 523.264 284.992zM512.064 35.392c-263.296 0-476.672 213.376-476.672 476.672 0 263.04 213.376 476.544 476.672 476.544 263.104 0 476.672-213.504 476.672-476.544C988.736 248.768 775.168 35.392 512.064 35.392zM507.712 929.216c-229.056 0-414.656-185.664-414.656-414.72 0-229.12 185.6-414.656 414.656-414.656 229.248 0 414.784 185.536 414.784 414.656C922.496 743.552 736.96 929.216 507.712 929.216zM521.856 694.272l-20.608 0c-13.568 0-24.64 11.072-24.64 24.96l0 25.92c0 13.696 11.008 24.896 24.64 24.896l20.608 0c13.696 0 24.768-11.2 24.768-24.896l0-25.92C546.624 705.28 535.616 694.272 521.856 694.272z"
+                    p-id="2931"></path>
+                </svg>请务必确定学号输入无误</div>
+            </div>
+            <button class="next_way">下一步</button>
+          </div>
+          <!-- 专业和班级 -->
+          <div class="step2" style="display:none">
+            <div class="stuMajor">
+              <h4>专业</h4>
+              <input type="text" placeholder="请输入专业" class="el-input myMajor">
+              <p></p>
+            </div>
+            <div class="stuClassNum">
+              <h4>班级</h4>
+              <input type="text" placeholder="请输入班级" class="el-input myClassNum" maxlength="2">
+              <p></p>
+              <div class="tip_text"><svg t="1612703581356" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  p-id="2930">
+                  <path
+                    d="M523.264 284.992l-22.016 0c-13.568 0-24.64 11.072-24.64 24.704l0 273.344c0 13.632 11.008 24.832 24.64 24.832l22.016 0c13.696 0 24.768-11.2 24.768-24.832l0-273.344C548.032 296.064 536.96 284.992 523.264 284.992zM512.064 35.392c-263.296 0-476.672 213.376-476.672 476.672 0 263.04 213.376 476.544 476.672 476.544 263.104 0 476.672-213.504 476.672-476.544C988.736 248.768 775.168 35.392 512.064 35.392zM507.712 929.216c-229.056 0-414.656-185.664-414.656-414.72 0-229.12 185.6-414.656 414.656-414.656 229.248 0 414.784 185.536 414.784 414.656C922.496 743.552 736.96 929.216 507.712 929.216zM521.856 694.272l-20.608 0c-13.568 0-24.64 11.072-24.64 24.96l0 25.92c0 13.696 11.008 24.896 24.64 24.896l20.608 0c13.696 0 24.768-11.2 24.768-24.896l0-25.92C546.624 705.28 535.616 694.272 521.856 694.272z"
+                    p-id="2931"></path>
+                </svg>例
+                ：2
+              </div>
+            </div>
+            <div class="button">
+              <button class="step2-pre">上一步</button>
+              <button class="step2-next">下一步</button>
+            </div>
+          </div>
+          <!-- 成绩部分 -->
+          <div class="step3" style="display:none">
+            <ul class="subject">
+              <li>
+                <h4>大一上英语成绩</h4>
+                <input type="text" placeholder="请输入成绩" class="el-input score" maxlength="4">
+                <p></p>
+              </li>
+              <li>
+
+                <h4>大一上高数成绩</h4>
+                <input type="text" placeholder="请输入成绩" class="el-input score" maxlength="4">
+                <p></p>
+              </li>
+              <li>
+                <h4>大一上C语言成绩</h4>
+                <input type="text" placeholder="请输入成绩" class="el-input score">
+                <p></p>
+              </li>
+              <li>
+                <h4>大一下英语成绩</h4>
+                <input type="text" placeholder="请输入成绩" class="el-input score" maxlength="4">
+                <p></p>
+              </li>
+              <li>
+                <h4>大一下高数成绩</h4>
+                <input type="text" placeholder="请输入成绩" class="el-input score">
+                <p></p>
+              </li>
+              <li>
+                <h4>大一下JAVA成绩</h4>
+                <input type="text" placeholder="请输入成绩" class="el-input score" maxlength="4">
+                <p></p>
+              </li>
+            </ul>
+            <div class="button">
+              <button class="previous_way">上一步</button>
+              <button class="submit">提交</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="message.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: Helvetica, arial, "MI Lan Pro", "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+    background: #1b1464;
+}
+
+input {
+    border: 1px solid #e8e8e8;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1300px;
+    height: 700px;
+    margin: 40px auto;
+    background: #fff;
+}
+
+.warp {
+    width: 984px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+.logo_area {
+    position: relative;
+    top: 20px;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto 50px;
+}
+
+.logo_area h4 {
+    position: absolute;
+    top: 0;
+    left: -999px;
+}
+
+.logo_area img {
+    width: 100%;
+}
+
+.regbox {
+    position: relative;
+    width: 984px;
+    height: 300px;
+}
+
+.step1,
+.step2 {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 328px;
+}
+
+.step1 h4,
+.step2 h4,
+.step3 h4 {
+    padding-bottom: 5px;
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.step1 .el-input,
+.step2 .el-input,
+.step3 .el-input {
+    width: 328px;
+    height: 42px;
+}
+
+.step1 .stuName,
+.step1 .stuID,
+.step2 .stuMajor,
+.step2 .stuClassNum {
+    position: relative;
+    width: 328px;
+    margin-bottom: 25px;
+}
+
+.tip_text {
+    margin: 5px 0 40px;
+    color: #666;
+    font-size: 12px;
+}
+
+svg {
+    position: relative;
+    top: 3px;
+    padding-right: 4px;
+    width: 14px;
+}
+
+.step1 button {
+    width: 328px;
+    height: 40px;
+    background-color: #1b1464;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.step3 {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 984px;
+}
+
+.step3 .subject li {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    list-style: none;
+}
+
+.step3 .subject li .el-input {
+    width: 80%;
+    height: 42px;
+    margin-bottom: 25px;
+}
+
+.step2 .button,
+.step3 .button {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 37px;
+    width: 328px;
+    height: 40px;
+}
+
+.step2 .button {
+    top: 0;
+}
+
+.step2 .button button,
+.step3 .button button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: #1b1464;
+    color: #fff;
+}
+
+.step2 button.step2-next,
+.step3 button.submit {
+    margin: 0;
+    float: right;
+}
+
+.step1 .error,
+.step2 .error {
+    color: #f45d90;
+    position: absolute;
+    right: -20px;
+    top: 38px;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    font-size: 12px;
+}
+
+.step3 .error {
+    display: inline-block;
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f5f5f5;
+    font-size: 12px;
+    color: #f45d90;
+    margin: 0;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.step3 .error::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: 13px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #f5f5f5;
+}
